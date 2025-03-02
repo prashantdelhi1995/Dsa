@@ -1,6 +1,6 @@
-1.find the mid of linllist
-2. reverse the second firstHalf
-3. after that mix 
+// 1.find the mid of linllist
+// 2. reverse the second firstHalf
+// 3. after that mix 
 
 
 
