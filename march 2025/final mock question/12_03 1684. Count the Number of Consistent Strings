@@ -1,0 +1,20 @@
+var countConsistentStrings = function(allowed, words) {
+    let count = 0;
+    let allowedSet = new Set(allowed); // Convert allowed string into a Set for quick lookup
+
+    for (let word of words) {
+        let isConsistent = true;
+
+        for (let char of word) {
+            if (!allowedSet.has(char)) { // Check if character is not in allowed set
+                isConsistent = false;
+                break;
+            }
+        }
+
+        if (isConsistent) count++; // If all characters were allowed, increment count
+    }
+
+    return count;
+    
+};
